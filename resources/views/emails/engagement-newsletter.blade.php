@@ -30,81 +30,25 @@
                                             <p style="margin: 0;color: #8DA3B7; font-size: 16px; letter-spacing: 0; line-height: 24px;" class="mobile-header-text">You asked, we listened. Today is the day we finally introduce one of the most requested features into The App.</p>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td style="padding: 0 0 43px;" class="mobile-padding-bottom-37">
-                                            <img src="https://via.placeholder.com/600x260" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="font-size: 16px; line-height: 24px; color: #8DA3B7; padding-bottom: 18px; text-align: center;">
-                                                            <p style="margin: 0 0 18px; line-height: 16px;" class="mobile-badge">
-                                                                <span style="display: inline-block; padding: 0 7px; border-radius: 16px; background-color: #ECF3FF; color: #029BDC; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; line-height: 16px; text-align: center;">&nbsp;New&nbsp;</span>
-                                                            </p>
-                                                            <h2 style="color: #1C486F; font-size: 26px; font-weight: 300; letter-spacing: 0; line-height: 33px; margin: 0 0 18px;" class="mobile-content-title">Subject Headline Goes Here</h2>
-                                                            <p style="margin: 0 0 10px; font-weight: normal; color: #8DA3B7;">
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molesti.
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="padding: 0 0 59px;" class="mobile-padding-bottom-34">
-                                                            <!-- Button : BEGIN -->
-                                                            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" class="mobile-button-container">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="center" style="border-radius: 4px; background: #029BDC;">
-                                                                            <a class="mobile-button" href="#" style="background: #029BDC; border: 0; font-size: 16px; line-height: 24px; text-decoration: none; padding: 10px 30px; color: #ffffff; display: block; border-radius: 4px; text-transform: capitalize;">Request A Demo</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <!-- Button : END -->
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 0 0 43px;">
-                                            <img src="https://via.placeholder.com/600x260" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="font-size: 16px; line-height: 24px; color: #8DA3B7; padding-bottom: 18px; text-align: center;">
-                                                            <h2 style="color: #1C486F; font-size: 26px; font-weight: 300; letter-spacing: 0; line-height: 33px; margin: 0 0 18px;" class="mobile-content-title">Subject Headline Goes Here</h2>
-                                                            <p style="margin: 0 0 10px; font-weight: normal; color: #8DA3B7;">
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molesti.
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="padding: 0 0 59px;" class="mobile-padding-bottom-45">
-                                                            <!-- Button : BEGIN -->
-                                                            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" class="mobile-button-container">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="center" style="border-radius: 4px; background: #029BDC;">
-                                                                            <a class="mobile-button" href="#" style="background: #029BDC; border: 0; font-size: 16px; line-height: 24px; text-decoration: none; padding: 10px 30px; color: #ffffff; display: block; border-radius: 4px; text-transform: capitalize;">Request A Demo</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <!-- Button : END -->
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
+                                </table>
+                                @component('emails.components.newsletter-panel1', [
+                                    'image' => 'https://via.placeholder.com/600x260',
+                                    'badge' => 'New',
+                                    'title' => 'Subject Headline Goes Here',
+                                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molesti.',
+                                    'url' => '#',
+                                    'button' => 'Request A Demo'
+                                ])
+                                @endcomponent
+                                @component('emails.components.newsletter-panel1', [
+                                    'image' => 'https://via.placeholder.com/600x260',
+                                    'title' => 'Subject Headline Goes Here',
+                                    'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molesti.',
+                                    'url' => '#',
+                                    'button' => 'Request A Demo'
+                                ])
+                                @endcomponent
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
                                         <td style="padding: 8px 0;">
                                             <div class="hr" style="height:1px;border-bottom:1px solid #8DA3B7; opacity: 0.25;">&nbsp;</div>
@@ -122,112 +66,60 @@
                                                     <tr>
                                                         <!-- Column : BEGIN -->
                                                         <td width="50%" valign="top" style="padding: 0 0 41px;" class="stack-column mobile-padding-bottom-14">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="padding: 10px 10px 18px; text-align: center">
-                                                                            <img src="https://via.placeholder.com/270X150" alt="alt_text" style="width: 100%; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="270" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
-                                                                            <h2 style="color: #1C486F; font-size: 26px; font-weight: 300; letter-spacing: 0; line-height: 33px; margin: 0 0 18px;" class="mobile-content-title">Subject Headline Goes Here</h2>
-                                                                            <p style="margin: 0 0 18px; font-weight: normal; color: #8DA3B7;">
-                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...
-                                                                            </p>
-                                                                            <p style="margin: 0 0 18px;">
-                                                                                <a href="#" style="font-size: 14px; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.newsletter-panel2', [
+                                                                'image' => 'https://via.placeholder.com/270X150',
+                                                                'title' => 'Subject Headline Goes Here',
+                                                                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...',
+                                                                'url' => '#',
+                                                                'button' => 'Read More',
+                                                                'comments' => '24',
+                                                                'views' => '4,200'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                         <!-- Column : END -->
                                                         <!-- Column : BEGIN -->
                                                         <td width="50%" valign="top" style="padding: 0 0 41px;" class="stack-column mobile-padding-bottom-14">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="padding: 10px 10px 18px; text-align: center">
-                                                                            <img src="https://via.placeholder.com/270X150" alt="alt_text" style="width: 100%; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="270" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
-                                                                            <h2 style="color: #1C486F; font-size: 26px; font-weight: 300; letter-spacing: 0; line-height: 33px; margin: 0 0 18px;" class="mobile-content-title">Subject Headline Goes Here</h2>
-                                                                            <p style="margin: 0 0 18px; font-weight: normal; color: #8DA3B7;">
-                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...
-                                                                            </p>
-                                                                            <p style="margin: 0 0 18px;">
-                                                                                <a href="#" style="font-size: 14px; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.newsletter-panel2', [
+                                                                'image' => 'https://via.placeholder.com/270X150',
+                                                                'title' => 'Subject Headline Goes Here',
+                                                                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...',
+                                                                'url' => '#',
+                                                                'button' => 'Read More',
+                                                                'comments' => '24',
+                                                                'views' => '4,200'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                         <!-- Column : END -->
                                                     </tr>
                                                     <tr>
                                                         <!-- Column : BEGIN -->
                                                         <td width="50%" valign="top" style="padding: 0 0 41px;" class="stack-column mobile-padding-bottom-14">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="padding: 10px 10px 18px; text-align: center">
-                                                                            <img src="https://via.placeholder.com/270X150" alt="alt_text" style="width: 100%; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="270" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
-                                                                            <h2 style="color: #1C486F; font-size: 26px; font-weight: 300; letter-spacing: 0; line-height: 33px; margin: 0 0 18px;" class="mobile-content-title">Subject Headline Goes Here</h2>
-                                                                            <p style="margin: 0 0 18px; font-weight: normal; color: #8DA3B7;">
-                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...
-                                                                            </p>
-                                                                            <p style="margin: 0 0 18px;">
-                                                                                <a href="#" style="font-size: 14px; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.newsletter-panel2', [
+                                                                'image' => 'https://via.placeholder.com/270X150',
+                                                                'title' => 'Subject Headline Goes Here',
+                                                                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...',
+                                                                'url' => '#',
+                                                                'button' => 'Read More',
+                                                                'comments' => '24',
+                                                                'views' => '4,200'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                         <!-- Column : END -->
                                                         <!-- Column : BEGIN -->
                                                         <td width="50%" valign="top" style="padding: 0 0 41px;" class="stack-column mobile-padding-bottom-14">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="padding: 10px 10px 18px; text-align: center">
-                                                                            <img src="https://via.placeholder.com/270X150" alt="alt_text" style="width: 100%; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="270" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;">
-                                                                            <h2 style="color: #1C486F; font-size: 26px; font-weight: 300; letter-spacing: 0; line-height: 33px; margin: 0 0 18px;" class="mobile-content-title">Subject Headline Goes Here</h2>
-                                                                            <p style="margin: 0 0 18px; font-weight: normal; color: #8DA3B7;">
-                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...
-                                                                            </p>
-                                                                            <p style="margin: 0 0 18px;">
-                                                                                <a href="#" style="font-size: 14px; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.newsletter-panel2', [
+                                                                'image' => 'https://via.placeholder.com/270X150',
+                                                                'title' => 'Subject Headline Goes Here',
+                                                                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor...',
+                                                                'url' => '#',
+                                                                'button' => 'Read More',
+                                                                'comments' => '24',
+                                                                'views' => '4,200'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                         <!-- Column : END -->
                                                     </tr>

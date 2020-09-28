@@ -19,29 +19,68 @@ Route::get('/', function () {
 
 /*** Email routes ***/
 Route::group(['prefix' => 'emails'], function () {
-	Route::view('/activity-notification-option-a', 'emails.activity-notification-option-a');
+    Route::get('/activity-notification-option-a', function() {
+        $mail = new App\Mail\ActivityNotificationOptionA();
+        return $mail->render();
+    });
 
-	Route::view('/activity-notification-option-b1', 'emails.activity-notification-option-b1');
+    Route::get('/activity-notification-option-b1', function() {
+        $mail = new App\Mail\ActivityNotificationOptionB1();
+        return $mail->render();
+    });
 
-	Route::view('/activity-notification-option-b2', 'emails.activity-notification-option-b2');
+    Route::get('/activity-notification-option-b2', function() {
+        $mail = new App\Mail\ActivityNotificationOptionB2();
+        return $mail->render();
+    });
 
-	Route::view('/activity-notification-option-b3', 'emails.activity-notification-option-b3');
+    Route::get('/activity-notification-option-b3', function() {
+        $mail = new App\Mail\ActivityNotificationOptionB3();
+        return $mail->render();
+    });
 
-	Route::view('/billing', 'emails.billing');
+    Route::get('/billing', function() {
+        $mail = new App\Mail\Billing();
+        return $mail->render();
+    });
 
-	Route::view('/engagement-newsletter', 'emails.engagement-newsletter');
+    Route::get('/engagement-newsletter', function() {
+        $mail = new App\Mail\EngagementNewsletter();
+        return $mail->render();
+    });
 
-	Route::view('/generic-notification', 'emails.generic-notification');
+    Route::get('/generic-notification', function() {
+        $mail = new App\Mail\GenericNotification();
+        return $mail->render();
+    });
 
-	Route::view('/match-notification', 'emails.match-notification');
+    Route::get('/match-notification', function() {
+        $mail = new App\Mail\MatchNotification();
+        return $mail->render();
+    });
 
-	Route::view('/new-feature', 'emails.new-feature');
+    Route::get('/new-feature', function() {
+        $mail = new App\Mail\NewFeature();
+        return $mail->render();
+    });
 
-	Route::view('/payment-failed', 'emails.payment-failed');
+    Route::get('/payment-failed', function() {
+        $mail = new App\Mail\PaymentFailed();
+        return $mail->render();
+    });
 
-	Route::view('/process-update-notification', 'emails.process-update-notification');
+    Route::get('/process-update-notification', function() {
+        $mail = new App\Mail\ProcessUpdateNotification();
+        return $mail->render();
+    });
 
-	Route::view('/promo', 'emails.promo');
+    Route::get('/promo', function() {
+        $mail = new App\Mail\Promo();
+        return $mail->render();
+    });
 
-	Route::view('/steps-content', 'emails.steps-content');
+    Route::get('/steps-content', function() {
+        $mail = new App\Mail\StepsContent();
+        return $mail->render();
+    });
 });

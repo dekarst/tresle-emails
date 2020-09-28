@@ -34,155 +34,64 @@
                                     </tr>
                                     <tr>
                                         <td dir="ltr" style="padding: 0 0 81px;" width="100%" class="stack-row2">
-                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="stack-column stack-column-media" width="38%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <img src="https://via.placeholder.com/191X235" alt="Image" class="center-on-narrow" style="height: auto; max-width: 191px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="100%" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                        <td class="stack-column stack-column-media" width="61.99%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <h2 style="color: #1C486F; font-size: 21px; font-weight: 600; letter-spacing: 0; line-height: 28px; margin: 0 0 15px;"><span style="color: #029BDC; font-size: 28px; font-weight: 600; letter-spacing: 2.55px; border-bottom: 2px solid #029BDC ;line-height: 38px; display: inline-block;">01</span><span class="title">The headline goes here</span></h2>
-                                                                            <p style="opacity: 0.5; color: #8DA3B7; font-size: 16px; letter-spacing: 0; line-height: 24px; margin: 0 0 15px;">A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.</p>
-                                                                            <p style="margin: 0 0 16px;">
-                                                                                <a href="#" style="font-size: 14px; font-weight: 600; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            @component('emails.components.steps-content-panel', [
+                                                'image' => 'https://via.placeholder.com/191X235',
+                                                'step' => '01',
+                                                'title' => 'The headline goes here',
+                                                'description' => 'A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.',
+                                                'button_type' => 'anchor',
+                                                'url' => '#',
+                                                'button' => 'Read More',
+                                                'comments' => '24',
+                                                'views' => '4,200'
+                                            ])
+                                            @endcomponent
                                         </td>
                                     </tr>
                                     <tr>
                                         <td dir="rtl" style="padding: 0 0 81px;" width="100%" class="stack-row2 stack-row-right">
-                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="stack-column stack-column-media stack-column-img" width="38%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <img src="https://via.placeholder.com/191X235" alt="Image" class="center-on-narrow" style="height: auto; max-width: 191px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="100%" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                        <td class="stack-column stack-column-media" width="61.99%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <h2 style="color: #1C486F; font-size: 21px; font-weight: 600; letter-spacing: 0; line-height: 28px; margin: 0 0 15px;"><span style="color: #029BDC; font-size: 28px; font-weight: 600; letter-spacing: 2.55px; border-bottom: 2px solid #029BDC ;line-height: 38px; display: inline-block;">02</span><span class="title">The headline goes here</span></h2>
-                                                                            <p style="opacity: 0.5; color: #8DA3B7; font-size: 16px; letter-spacing: 0; line-height: 24px; margin: 0 0 15px;">A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.</p>
-                                                                            <p style="margin: 0 0 16px;">
-                                                                                <a href="#" style="font-size: 14px; font-weight: 600; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            @component('emails.components.steps-content-panel', [
+                                                'image' => 'https://via.placeholder.com/191X235',
+                                                'step' => '02',
+                                                'title' => 'The headline goes here',
+                                                'description' => 'A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.',
+                                                'button_type' => 'anchor',
+                                                'url' => '#',
+                                                'button' => 'Read More',
+                                                'comments' => '24',
+                                                'views' => '4,200'
+                                            ])
+                                            @endcomponent
                                         </td>
                                     </tr>
                                     <tr>
                                         <td dir="ltr" style="padding: 0 0 81px;" width="100%" class="stack-row2">
-                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="stack-column stack-column-media" width="38%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <img src="https://via.placeholder.com/191X235" alt="Image" class="center-on-narrow" style="height: auto; max-width: 191px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="100%" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                        <td class="stack-column stack-column-media" width="61.99%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <h2 style="color: #1C486F; font-size: 21px; font-weight: 600; letter-spacing: 0; line-height: 28px; margin: 0 0 15px;"><span style="color: #029BDC; font-size: 28px; font-weight: 600; letter-spacing: 2.55px; border-bottom: 2px solid #029BDC ;line-height: 38px; display: inline-block;">03</span><span class="title">The headline goes here</span></h2>
-                                                                            <p style="opacity: 0.5; color: #8DA3B7; font-size: 16px; letter-spacing: 0; line-height: 24px; margin: 0 0 15px;">A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.</p>
-                                                                            <p style="margin: 0 0 16px;">
-                                                                                <a href="#" style="font-size: 14px; font-weight: 600; line-height: 16px; text-decoration: none; color: #029BDC;">Read More</a>
-                                                                            </p>
-                                                                            <p style="margin: 0; color: #8DA3B7; font-family: 'Source Sans Pro', sans-serif !important; font-size: 14px; letter-spacing: 0; line-height: 23px;">
-                                                                                24 comments&nbsp;·&nbsp;4,200 views
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            @component('emails.components.steps-content-panel', [
+                                                'image' => 'https://via.placeholder.com/191X235',
+                                                'step' => '03',
+                                                'title' => 'The headline goes here',
+                                                'description' => 'A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.',
+                                                'button_type' => 'anchor',
+                                                'url' => '#',
+                                                'button' => 'Read More',
+                                                'comments' => '24',
+                                                'views' => '4,200'
+                                            ])
+                                            @endcomponent
                                         </td>
                                     </tr>
                                     <tr>
                                         <td dir="rtl" style="padding: 0 0 81px;" width="100%" class="stack-row2 stack-row-right">
-                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="stack-column stack-column-media stack-column-img" width="38%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <img src="https://via.placeholder.com/191X235" alt="Image" class="center-on-narrow" style="height: auto; max-width: 191px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;" width="100%" height="" border="0">
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                        <td class="stack-column stack-column-media" width="61.99%" valign="top">
-                                                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td dir="ltr" valign="top">
-                                                                            <h2 style="color: #1C486F; font-size: 21px; font-weight: 600; letter-spacing: 0; line-height: 28px; margin: 0 0 15px;"><span style="color: #029BDC; font-size: 28px; font-weight: 600; letter-spacing: 2.55px; border-bottom: 2px solid #029BDC ;line-height: 38px; display: inline-block;">04</span><span class="title">The headline goes here</span></h2>
-                                                                            <p style="opacity: 0.5; color: #8DA3B7; font-size: 16px; letter-spacing: 0; line-height: 24px; margin: 0 0 25px;">A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.</p>
-                                                                            <p>
-                                                                                <a class="mobile-button" href="#" style="display: inline-block; min-width: 172px; background: #029BDC; border: 0; font-size: 16px; line-height: 24px; text-decoration: none; padding: 10px 30px; color: #ffffff; border-radius: 4px; text-align: center;">Get the Ebook</a>
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            @component('emails.components.steps-content-panel', [
+                                                'image' => 'https://via.placeholder.com/191X235',
+                                                'step' => '04',
+                                                'title' => 'The headline goes here',
+                                                'description' => 'A delay in response can negatively impact a deal. Change your preferences to receive an email notification when a Buyer sends a message to the Tresle Message Center.',
+                                                'button_type' => 'button',
+                                                'url' => '#',
+                                                'button' => 'Get the Ebook'
+                                            ])
+                                            @endcomponent
                                         </td>
                                     </tr>
                                 </table>

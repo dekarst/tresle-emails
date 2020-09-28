@@ -41,104 +41,44 @@
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 0 0 12px;" class="mobile-padding-bottom-19">
-                                                            <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="84%" class="mobile-content-section">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="font-size: 16px; line-height: 24px; color: #8DA3B7; padding: 13.5px 32.5px 13.5px 30.63px; border: 1px solid #EAEDF3; border-left: 3px solid #249318; border-radius: 0 4px 4px 0; background-color: #FFFFFF; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.04);" class="mobile-content-items">
-                                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td class="stack-column mobile-padding-bottom-13-5">
-                                                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td width="19%"><span style="color: #1C486F; font-size: 36px; letter-spacing: 0; line-height: 38px;">2</span></td>
-                                                                                                        <td>
-                                                                                                            <div style="color: #8DA3B7; font-size: 11px; font-weight: 600; letter-spacing: 0.25px; line-height: 17px; margin: 0;">PENDING</div>
-                                                                                                            <div style="color: #8DA3B7; font-size: 11px; font-weight: 600; letter-spacing: 0.25px; line-height: 17px; margin: 0;">MATCH REQUESTS</div>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                        <td width="41%" class="stack-column mobile-padding-bottom-13-5">
-                                                                                            <a href="#" style="background: transparent; border: 1px solid rgba(36, 147, 24, 0.19); border-radius: 2px; font-size: 13px; font-weight: 600; line-height: 24px; text-decoration: none; padding: 6px; color: #249318; text-transform: capitalize; text-align: center; display: block;">View My Requests</a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.notification-panel2', [
+                                                                'count' => '2',
+                                                                'text1' => 'PENDING',
+                                                                'text2' => 'MATCH REQUESTS',
+                                                                'url' => '#',
+                                                                'button' => 'View My Requests',
+                                                                'color' => '#249318',
+                                                                'border_color' => 'rgba(36, 147, 24, 0.19)'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 0 0 12px;" class="mobile-padding-bottom-19">
-                                                            <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="84%" class="mobile-content-section">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="font-size: 16px; line-height: 24px; color: #8DA3B7; padding: 13.5px 32.5px 13.5px 30.63px; border: 1px solid #EAEDF3; border-left: 3px solid #249318; border-radius: 0 4px 4px 0; background-color: #FFFFFF; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.04);" class="mobile-content-items">
-                                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td class="stack-column mobile-padding-bottom-13-5">
-                                                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td width="19%"><span style="color: #1C486F; font-size: 36px; letter-spacing: 0; line-height: 38px;">1</span></td>
-                                                                                                        <td>
-                                                                                                            <div style="color: #8DA3B7; font-size: 11px; font-weight: 600; letter-spacing: 0.25px; line-height: 17px; margin: 0;">UNREAD</div>
-                                                                                                            <div style="color: #8DA3B7; font-size: 11px; font-weight: 600; letter-spacing: 0.25px; line-height: 17px; margin: 0;">MESSAGE</div>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                        <td align="right" width="41%" class="stack-column mobile-padding-bottom-13-5">
-                                                                                            <a href="#" style="background: transparent; border: 1px solid rgba(36, 147, 24, 0.19); border-radius: 2px; font-size: 13px; font-weight: 600; line-height: 24px; text-decoration: none; padding: 6px; color: #249318; text-transform: capitalize; text-align: center; display: block;">Read My Message</a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.notification-panel2', [
+                                                                'count' => '1',
+                                                                'text1' => 'UNREAD',
+                                                                'text2' => 'MESSAGE',
+                                                                'url' => '#',
+                                                                'button' => 'View My Requests',
+                                                                'color' => '#249318',
+                                                                'border_color' => 'rgba(36, 147, 24, 0.19)'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td style="padding: 0 0 26px;" class="mobile-padding-bottom-19">
-                                                            <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="84%" class="mobile-content-section">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="font-size: 16px; line-height: 24px; color: #8DA3B7; padding: 13.5px 32.5px 13.5px 30.63px; border: 1px solid #EAEDF3; border-left: 3px solid #029BDC; border-radius: 0 4px 4px 0; background-color: #FFFFFF; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.04);" class="mobile-content-items">
-                                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td class="stack-column mobile-padding-bottom-13-5">
-                                                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td width="19%"><span style="color: #1C486F; font-size: 36px; letter-spacing: 0; line-height: 38px;">2</span></td>
-                                                                                                        <td>
-                                                                                                            <div style="color: #8DA3B7; font-size: 11px; font-weight: 600; letter-spacing: 0.25px; line-height: 17px; margin: 0;">MATCHES WITHOUT</div>
-                                                                                                            <div style="color: #8DA3B7; font-size: 11px; font-weight: 600; letter-spacing: 0.25px; line-height: 17px; margin: 0;">CONVERSATIONS</div>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                        <td align="right" width="41%" class="stack-column mobile-padding-bottom-13-5">
-                                                                                            <a href="#" style="background: transparent; border: 1px solid rgba(2, 155, 220, 0.19); border-radius: 2px; font-size: 13px; font-weight: 600; line-height: 24px; text-decoration: none; padding: 6px; color: #029BDC; text-transform: capitalize; text-align: center; display: block;">View My Matches</a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            @component('emails.components.notification-panel2', [
+                                                                'count' => '3',
+                                                                'text1' => 'PENDING',
+                                                                'text2' => 'MATCH REQUESTS',
+                                                                'url' => '#',
+                                                                'button' => 'View My Requests',
+                                                                'color' => '#029BDC',
+                                                                'border_color' => 'rgba(2, 155, 220, 0.19)'
+                                                            ])
+                                                            @endcomponent
                                                         </td>
                                                     </tr>
                                                     <tr>
